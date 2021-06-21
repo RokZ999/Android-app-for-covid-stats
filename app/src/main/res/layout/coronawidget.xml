@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.83"
+    android:background="@color/black"
+    android:padding="1dp"
+    android:theme="@style/ThemeOverlay.Coronastevec.AppWidgetContainer">
+
+    <LinearLayout
+        android:id="@+id/mainLay"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:weightSum="100"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="CoronaStevec"
+            android:textSize="16dp"
+            android:paddingLeft="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_weight="90"
+            android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="10"
+            android:src="@drawable/unnamed"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            >
+
+               <ImageView
+                   android:layout_gravity="center"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:textColor="@color/white"
+                   android:layout_weight="1"
+                   android:src="@drawable/_920px_flag_of_slovenia_svg"
+                   android:layout_marginTop="0dp"/>//Slika
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:text="SLO"
+                   android:textSize="18dp"
+                   android:paddingTop="2dp"
+                   android:textColor="@color/white"
+                   android:layout_weight="1"
+                   android:textStyle="bold|italic"/> //SLO
+               <TextView
+                   android:id="@+id/set_date"
+                   android:textAlignment="textEnd"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="01. 01. 2021"
+                   android:textSize="17dp"
+                   android:textColor="@color/white"
+                   android:layout_weight="2"
+                   android:textStyle="italic"/>//DATUM
+
+
+
+        </LinearLayout>//1.
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Št. testov:"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"/>//Testirini text
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Pozitivni: "
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"/>//Pozitivni text
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Umrli: "
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"/>//Smrti text
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+            <TextView
+                android:id="@+id/st_test"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="30000"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>//Testirini get text
+
+            <TextView
+                android:id="@+id/st_poz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="30"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="19dp"
+                android:textStyle="bold" />//Pozitivni get text
+
+            <TextView
+                android:id="@+id/st_umrli"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="10 "
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="19dp"
+                android:textStyle="bold" />//Smrti get text
+
+        </LinearLayout>//2.
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.2"
+            android:weightSum="3"
+            >
+
+            //7dni
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:text="Povrpečje za 7 dni:"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/sedemDni_povprecje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1000"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />//7dni
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
