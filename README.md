@@ -6,5 +6,4 @@
 
 Android widget with corona stats for Slovenia
 
-![image](https://user-images.githubusercontent.com/71169333/199237259-43573e22-06c8-4c83-8f96-ea1c6591585e.png)
-
+<img src="https://user-images.githubusercontent.com/71169333/199237259-43573e22-06c8-4c83-8f96-ea1c6591585e.png" width="250" height="500" />
